@@ -1,0 +1,7 @@
+# Safety-first: ignore EVERYTHING by default so the private source,
+# build script, and node_modules can never be committed by accident.
+*
+
+# ...and explicitly allow ONLY the published, obfuscated artifact:
+!index.html
+!.gitignore
