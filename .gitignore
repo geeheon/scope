@@ -5,3 +5,13 @@
 # ...and explicitly allow ONLY the published, obfuscated artifact:
 !index.html
 !.gitignore
+
+# ...plus the static PWA assets that must ship next to it so the app is
+# installable ("Pin to taskbar"). Each is listed by name on purpose — never
+# use a wildcard here, or the private source could slip through.
+!manifest.webmanifest
+!sw.js
+!favicon.ico
+!icon-192.png
+!icon-512.png
+!icon-512-maskable.png
